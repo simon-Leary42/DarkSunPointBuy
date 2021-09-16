@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Darksun Modified Point Buy</title>
+		<style>
+			body{
+			background-color: white;
+			font-family: Cambria;
+			}
+			h1{
+			text-align:center;
+			}
+			.container{
+				overflow:auto;
+				padding:10px;
+			}
+			.stats{
+				padding:10px;
+				overflow:auto;
+				background-color: darkgray;
+				width:720px;
+				margin:auto;
+			}
+			.stat{
+				width:100px;
+				padding: 10px;
+				background-color: gray;
+				float:left;
+			}
+			.statTitle{
+				text-align: center;
+				background-color:white;
+				font-size: 30px;
+			}
+			.plusMinus{
+				width:49px;
+				margin:auto;
+			}
+			.status{
+				overflow:auto;
+				align:center;
+				text-align:center;
+				margin:auto;
+				width:237px;
+			}
+			.points{
+				text-align:center;
+				float:left;
+				font-size: 24px;	
+			}
+			@media (max-width: 420px) {
+				.stats{
+				width:75%;	
+				
+				}
+			}
+		</style>
+
+	</head>
+<body>
+
+<div class="container">
+	<h1>Dark Sun Modified Point Buy</h1>
+	<div class="stats">
+		<div class="stat">
+			<p class="statTitle"> STR </p>
+			<p id="strTitle" class="statTitle">8</p>
+			<div class="plusMinus">
+				<button onclick="strMM('strTitle', str)">-</button>
+				<button onclick="strPP('strTitle', str)">+</button>
+			</div>
+		</div>
+		<div class="stat">
+			<p class="statTitle"> DEX </p>
+			<p id="dexTitle" class="statTitle">8</p>
+			<div class="plusMinus">
+				<button onclick="dexMM('dexTitle', dex)">-</button>
+				<button onclick="dexPP('dexTitle', dex)">+</button>
+			</div>
+		</div>
+		<div class="stat">
+			<p class="statTitle"> CON </p>
+			<p id="conTitle" class="statTitle">8</p>
+			<div class="plusMinus">
+				<button onclick="conMM('conTitle', con)">-</button>
+				<button onclick="conPP('conTitle', con)">+</button>
+			</div>
+		</div>
+		<div class="stat">
+			<p class="statTitle"> INT </p>
+			<p id="intTitle" class="statTitle">8</p>
+			<div class="plusMinus">
+				<button onclick="intMM('intTitle', int)">-</button>
+				<button onclick="intPP('intTitle', int)">+</button>
+			</div>
+		</div>
+		<div class="stat">
+			<p class="statTitle"> WIS </p>
+			<p id="wisTitle" class="statTitle">8</p>
+			<div class="plusMinus">
+				<button onclick="wisMM('wisTitle', wis)">-</button>
+				<button onclick="wisPP('wisTitle', wis)">+</button>
+			</div>
+		</div>
+
+		<div class="stat">
+			<p class="statTitle"> CHA </p>
+			<p id="chaTitle" class="statTitle">8</p>
+			<div class="plusMinus">
+				<button onclick="chaMM('chaTitle', cha)">-</button>
+				<button onclick="chaPP('chaTitle', cha)">+</button>
+			</div>
+		</div>
+	</div>
+ 	<div class="status">
+		<p class="points">you have-</p>
+		<p id="pointsTotal" class="points">40</p>
+		<p class="points">-points left</p>
+	</div>	
+</div>	
+<script src=DarkSunStats.js></script>
+</body>
+</html>
